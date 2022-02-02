@@ -1,0 +1,271 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.background-image::after{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background: url(image2.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+
+/*top-bar*/
+.top-bar{
+    color: #fff;
+    display: flex;
+    background-color: #0060b4;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 500;
+    padding: 10px 0;
+    padding: 0 100px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.leftside a{
+    padding-left: 280px;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+.rightside {
+    padding-left: 20%;
+    color: #fff;
+    font-size: 15px;
+}
+.view-color{
+    background: red;
+    padding: 0 2px;
+    border-radius: 5px;
+}
+
+
+
+/*topbar-2*/
+.top-bar2{
+    padding: 56.5px 0;
+    background: #0072d3;
+    color: #fff
+}
+.img1{
+    width: 28%;
+    padding-left: 20%;
+    transform: translateY(-30px);
+}
+.notice{
+    display: flex;
+    float: right;
+    transform: translateY(-55px);
+}
+.notice li{
+    color: #808080;
+    line-height: 25px; 
+}
+.notice li a{
+    text-decoration: none;
+    font-size: 19px;
+}
+
+
+
+
+/*Menubox*/
+.menubar-box{
+    margin: 0 19%;
+    align-items: center;
+    background-position: centre;
+    background-color: #fff;
+    padding: 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+    transform: translateY(-60px);
+}
+.menubar{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 0;
+}
+.menubar li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.menubar li a{
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: small;
+}
+.menubar li a:hover{
+    color: blue;
+}
+
+
+
+
+
+/*Dropdown menu*/
+.dropmenu{
+    display: none;
+    list-style: none;
+}
+.dropmenu li{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+.menubar li:hover .dropmenu{
+    width: 200px;
+    display: block;
+    position: absolute;
+    background: #fff;
+    padding: 10px 5px; 
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid rgba(233, 219, 219, 0.63);
+    border-radius: 5px;
+}
+.menubar li:hover .dropmenu li{
+    padding: 5px 0px;
+}
+.dropmenu li:hover{
+    transform: translateX(6px);
+    transition: 0.2s;
+}
+
+
+
+
+/*Content1*/
+.content1{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    background-position: center;
+}
+.content1 h1{
+    font-size: 50px;
+    margin: 0 30%;
+    font-family: "Open Sans", sans-serif;;
+   font-weight: lighter;
+}
+.content1 p{
+    font-size: 25px;
+    margin: 0 27%;
+    padding: 10px 0;
+}
+.button{
+    display: inline-block;
+    width: 9%;
+    margin-top: 30px;
+    padding: 20px 25px;
+    font-size: 15px;
+    color: #2e7eed;
+    border: 2px solid #2e7eed;
+    border-radius: 5px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+.button:hover{
+    color: #fff;
+    background-color:#2e7eed;
+}
+
+
+
+
+
+/*content2*/
+.content2{
+    display: flex;
+    transform: translateY(570px);
+    margin-left: 20%; 
+}
+.content2 h1{
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 50px;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+}
+.content2 p{
+    font-size: 16px;
+    font-family: "Lora", serif;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-style: italic;
+    text-align: justify;
+    color: #242424;
+    margin-left: 80px;
+    width: 60%;
+}
+.image3{
+    width: 600px;
+    height: 350px;
+    padding-top: 80px;
+}
+
+
+
+
+
+/*Content3*/
+.content3{
+    transform: translateY(700px);
+    background-color: #fafafa;
+    background-position: center;
+    padding:120px 0;
+}
+.content3 h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+    padding-bottom: 25px;
+}
+.content3 p{
+    font-size: 18px;
+    font-family: "Lora", serif;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-style: italic;
+    color: #242424;
+    text-align: justify;
+    margin: 0 20%;
+    text-align: left;
+    width: 60%;
+}
+.line-image{
+    display: flex;
+    margin: 0 20%;
+    list-style: none;
+}
+.line-image img{
+    width: 35px;
+    border-radius: 45px;
+}
+.line-image li{
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #808080;;
+}
+
+
